@@ -1,0 +1,42 @@
+@import "s1_ib";
+//@import "menu_center";
+@import "menu_nav_center";
+
+
+body{
+	font-family: Arial;
+	line-height: 1.4;
+	margin:0;
+	padding: 0;
+	background:#eee;
+}
+
+.col{
+	margin-top: 0px;
+}
+
+.s2{
+	&__blok1{
+	color:#555;
+	width: 23%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5% 40px 5%;
+	text-align: left;
+	}
+	&__cir{
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+		border-radius: 50%;
+		margin:0 auto;
+	}
+	&__cimg{
+		width:100%;
+		height:100%;
+		
+	}
+	&__h4{text-align: center;}
+	&__body{}
+}
+

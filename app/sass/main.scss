@@ -1,0 +1,33 @@
+@import "part";
+
+
+
+.col{
+	width: 94%;
+	margin: 0 auto;
+	padding: 15px;
+	text-align:center;
+	box-shadow: 1px 1px 5px #F00;
+	border-radius: 5px;
+
+	.col-05{
+		width: 45%;
+		margin:  20px 40px 20px 0;
+		display: inline-block;
+		vertical-align: top;
+		p{
+			text-align: left;	
+		}
+	}
+}	
+.p-p{
+	color:#F00;
+	font-size: 1em;
+	text-align: left;
+}
+.p-p1{
+	color:#0F0;
+	font-size: 1em;
+	text-align: left;
+}
+
