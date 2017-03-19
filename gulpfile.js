@@ -1,14 +1,14 @@
 var gulp        = require('gulp'),
 	sass         = require('gulp-sass'), //Подключаем Sass пакет,
-	browserSync  = require('browser-sync'), // Подключаем Browser Sync
-	concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
+	browserSync  = require('browser-sync'),// Подключаем Browser Sync
+	concat       = require('gulp-concat'),// Подключаем gulp-concat (для конкатенации файлов)
 	uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
 	cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
 	rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
 	del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
-	imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
-	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
+//	imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
+//	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
+//	cache        = require('gulp-cache'); // Подключаем библиотеку кеширования
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 
