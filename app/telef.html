@@ -1,0 +1,501 @@
+
+
+<style>
+	.lt-xbutton-main-wrapper div, .lt-xbutton-main-wrapper article, .lt-xbutton-main-wrapper aside, .lt-xbutton-main-wrapper details, .lt-xbutton-main-wrapper figcaption, .lt-xbutton-main-wrapper figure, .lt-xbutton-main-wrapper footer, .lt-xbutton-main-wrapper header, .lt-xbutton-main-wrapper hgroup, .lt-xbutton-main-wrapper nav, .lt-xbutton-main-wrapper section, .lt-xbutton-main-wrapper summary {
+    display: block;
+}
+	
+.lt-xbutton-main-wrapper {
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    display: block;
+    left: 80px;
+    bottom: 7%;
+    position: fixed;
+    z-index: 999;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+.lt-xbutton .lt-xbutton-wrapper {
+    overflow: hidden;
+    height: 100%;
+    -webkit-border-radius: 0 50% 50% 0;
+    -moz-border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.lt-xbutton {
+    font-family: "proxima_nova";
+    width: 58px;
+    height: 58px;
+    text-align: left;
+    -webkit-transition: width .5s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+    -moz-transition: width .5s ease-in-out,-moz-box-shadow .3s ease-in-out;
+    -ms-transition: width .5s ease-in-out,-ms-box-shadow .3s ease-in-out;
+    -o-transition: width .5s ease-in-out,-o-box-shadow .3s ease-in-out;
+    transition: width .5s ease-in-out,box-shadow .3s ease-in-out;
+    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+    -moz-box-shadow: 0 0 0 0 rgba(0,0,0,0),0 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+    background: #fff;
+    -webkit-border-radius: 58px;
+    -moz-border-radius: 58px;
+    border-radius: 58px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-animation: buttonShow .7s both ease-in-out 1;
+    -moz-animation: buttonShow .7s both ease-in-out 1;
+    -o-animation: buttonShow .7s both ease-in-out 1;
+    animation: buttonShow .7s both ease-in-out 1;
+    cursor: pointer;
+}
+
+.lt-xbutton-main-wrapper * {
+    font-family: 'proxima_nova';
+    color: #000;
+}
+
+.lt-xbutton-main-wrapper * {
+    font: inherit;
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    float: none;
+    text-shadow: none;
+    overflow: visible;
+    text-align: left;
+    width: auto;
+    height: auto;
+    min-width: 0;
+    max-width: none;
+    min-height: 0;
+    max-height: none;
+    background: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    color: inherit;
+    text-indent: 0;
+}
+.lt-xbutton.lt-xbutton-active .lt-xbutton-flash {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.lt-xbutton .lt-xbutton-flash.lt-flash-left {
+    -webkit-animation: iconAnim 2s both ease-in-out infinite;
+    -moz-animation: iconAnim 2s both ease-in-out infinite;
+    -o-animation: iconAnim 2s both ease-in-out infinite;
+    animation: iconAnim 2s both ease-in-out infinite;
+}
+.lt-xbutton .lt-xbutton-flash.lt-flash-right {
+    -webkit-animation: iconAnimtwo 2s both ease-in-out infinite;
+    -moz-animation: iconAnimtwo 2s both ease-in-out infinite;
+    -o-animation: iconAnimtwo 2s both ease-in-out infinite;
+    animation: iconAnimtwo 2s both ease-in-out infinite;
+}
+
+.lt-xbutton .lt-xbutton-dialler {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 74px;
+    height: 74px;
+}
+.lt-xbutton .lt-xbutton-dialler .lt-xbutton-dialler-half {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.lt-xbutton .lt-xbutton-dialler .lt-xbutton-dialler-half .lt-xbutton-dialler-pie.pie-left {
+    border-radius: 76px 0 0 76px;
+    border-right: none;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-animation: pie-left 4s both linear infinite;
+    -moz-animation: pie-left 4s both linear infinite;
+    -o-animation: pie-left 4s both linear infinite;
+    animation: pie-left 4s both linear infinite;
+}
+
+.lt-xbutton .lt-xbutton-dialler .lt-xbutton-dialler-half .lt-xbutton-dialler-pie {
+    border: 1px solid #24be9c;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-clip: padding-box;
+    width: 36px;
+    height: 72px;
+}
+.lt-xbutton .lt-xbutton-dialler .lt-xbutton-dialler-half .lt-xbutton-dialler-pie.pie-right {
+    border-radius: 0 76px 76px 0;
+    border-left: none;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-animation: pie-right 4s both linear infinite;
+    -moz-animation: pie-right 4s both linear infinite;
+    -o-animation: pie-right 4s both linear infinite;
+    animation: pie-right 4s both linear infinite;
+}
+
+{
+    float: left;
+}
+
+.lt-xbutton.lt-xbutton-active .lt-xbutton-icons {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    margin-right: 0;
+    -webkit-transition: -webkit-transform .5s,border-color .5s;
+    -moz-transition: -moz-transform .5s,border-color .5s;
+    -ms-transition: -ms-transform .5s,border-color .5s;
+    -o-transition: -o-transform .5s,border-color .5s;
+    transition: transform .5s,border-color .5s;
+}
+
+.lt-xbutton .lt-xbutton-icons {
+    line-height: 76px;
+    text-align: center;
+    height: 54px;
+    width: 54px;
+    border: 2px solid transparent;
+    background: #fff;
+    position: relative;
+    z-index: 999;
+    -webkit-border-radius: 54px;
+    -moz-border-radius: 54px;
+    border-radius: 54px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: -webkit-transform .5s,border-color .5s;
+    -moz-transition: -moz-transform .5s,border-color .5s;
+    -ms-transition: -ms-transform .5s,border-color .5s;
+    -o-transition: -o-transform .5s,border-color .5s;
+    transition: transform .5s,border-color .5s;
+}
+
+.lt-xbutton .lt-xbutton-icons .lt-xbutton-phone-icon {
+    color: #24be9c;
+    font-size: 36px;
+    line-height: 58px;
+}
+
+.lt-xbutton * {
+    font-family: "proxima_nova";
+    color: #4c4c4c;
+    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    font-style: normal;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #000;
+}
+
+.lt-xbutton-main-wrapper * {
+    font-family: 'proxima_nova';
+    color: #000;
+}
+
+.lt-fa-phone:before {
+    content: "\f095";
+}
+
+.lt-fa:before {
+    display: inline-block;
+    font-family: "lt-fontawesome" !important;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+bootstrap.min.css:5
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.lt-xbutton.lt-xbutton-active .lt-xbutton-txt {
+    margin: 0 -2px 0 0;
+    opacity: 1;
+    -webkit-transition: margin 1s,opacity 1s;
+    -moz-transition: margin 1s,opacity 1s;
+    -ms-transition: margin 1s,opacity 1s;
+    -o-transition: margin 1s,opacity 1s;
+    transition: margin 1s,opacity 1s;
+}
+
+.lt-xbutton .lt-xbutton-wrapper .lt-xbutton-txt {
+    font: 12px 'proxima_nova';
+    float: left;
+    width: 100px;
+    color: #4c4c4c;
+    margin: 0 -50px 0 -100px;
+    opacity: 0;
+    word-wrap: break-word;
+    height: 58px;
+}
+.lt-xbutton .lt-xbutton-wrapper .lt-xbutton-txt span {
+    height: 58px;
+    width: inherit;
+    vertical-align: middle;
+    display: table-cell;
+    line-height: normal;
+}
+
+.lt-xbutton-main-wrapper form {
+    margin: 0;
+}
+
+.lt-xbutton.lt-xbutton-active .lt-xbutton-form-action .lt-close-main {
+    width: 38px;
+    height: 38px;
+    left: auto;
+    top: 8px;
+    right: 8px;
+    display: block;
+    z-index: 10;
+}
+
+.lt-xbutton.lt-xbutton-active .lt-xbutton-close-icon {
+    filter: alpha(opacity=100);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+.lt-xbutton .lt-xbutton-close-icon {
+    position: absolute;
+    display: none;
+    top: 6px;
+    left: 6px;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #fff;
+    color: #d4d4d4;
+    border: 1px solid #d4d4d4;
+}
+.lt-xbutton.lt-xbutton-active .lt-xbutton-bttn-wrap {
+    right: 53px;
+    -webkit-transition: right .5s;
+    -moz-transition: right .5s;
+    -ms-transition: right .5s;
+    -o-transition: right .5s;
+    transition: right .5s;
+}
+
+.lt-xbutton .lt-xbutton-bttn-wrap {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    left: auto;
+    -webkit-transition: right .5s;
+    -moz-transition: right .5s;
+    -ms-transition: right .5s;
+    -o-transition: right .5s;
+    transition: right .5s;
+}
+.lt-xbutton.lt-xbutton-active .lt-xbutton-bttn {
+    outline: none;
+    opacity: 1;
+    z-index: 9;
+    color: #fff;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    cursor: pointer;
+}
+
+.lt-xbutton .lt-xbutton-wrapper .lt-xbutton-bttn {
+    background: #24be9c;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    position: relative;
+    border: none;
+    font-size: 18px;
+    opacity: 0;
+    text-align: center;
+}
+
+.lt-xbutton-main-wrapper button, .lt-xbutton-main-wrapper input, .lt-xbutton-main-wrapper select, .lt-xbutton-main-wrapper textarea {
+    vertical-align: inherit;
+}
+.lt-xbutton .lt-xbutton-call-recuest-icon {
+    line-height: 0;
+    opacity: 0;
+    width: 38px;
+    height: 38px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #24be9c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.lt-xbutton * {
+    font-family: "proxima_nova";
+    color: #4c4c4c;
+    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    font-style: normal;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #000;
+}
+
+.lt-xbutton .lt-xbutton-call-recuest-icon:before {
+    content: "\f060";
+    font-size: 10px;
+    font-family: "lt-fontawesome";
+    color: #24be9c;
+    position: absolute;
+    top: 15px;
+    left: 19px;
+    transform: rotate(-45deg);
+}
+
+.lt-xbutton-call-recuest-icon:before {
+    content: "\f060";
+    font-family: 'lt-fontawesome';
+}
+.lt-xbutton .lt-xbutton-call-recuest-icon:after {
+    content: "\f095";
+    font-size: 12px;
+    color: #506467;
+    font-family: "lt-fontawesome";
+    position: absolute;
+    top: 21px;
+    font-size: 28px;
+    left: 7px;
+}
+
+.lt-xbutton-call-recuest-icon:after {
+    content: "\f095";
+    font-family: 'lt-fontawesome';
+}
+</style>
+<div class="lt-xbutton" data-member="*" data-days="0,1,2,3,4" data-id="571924" data-interval-begin="36000" data-departments="122528" data-interval-end="64800">
+   <span class="lt-xbutton-flash lt-flash-left"></span><span class="lt-xbutton-flash lt-flash-right"></span>
+   <div class="lt-xbutton-dialler">
+      <div class="lt-xbutton-dialler-half half-left">
+         <div class="lt-xbutton-dialler-pie pie-left"></div>
+      </div>
+      <div class="lt-xbutton-dialler-half half-right">
+         <div class="lt-xbutton-dialler-pie pie-right"></div>
+      </div>
+   </div>
+   <div class="lt-xbutton-wrapper">
+      <div class="lt-xbutton-icons"><i class="lt-fa lt-fa-phone lt-xbutton-phone-icon"></i></div>
+      <div class="lt-xbutton-txt"><span>   Мы перезвоним через 28 секунд</span></div>
+      <form class="lt-xbutton-form-action">
+         <input type="text" placeholder="Введите ваш телефон" class="lt-xbutton-input"><i class="lt-xbutton-close-icon lt-close-main"></i>
+         <div class="lt-xbutton-bttn-wrap"><button class="lt-xbutton-bttn lt-xbutton_call" type="button"><span class="lt-xbutton-bttn-flur"></span><i class="lt-fa lt-fa-check"></i></button><i class="lt-xbutton-call-recuest-icon"></i></div>
+      </form>
+      <div class="lt-xbutton-status-busy">
+         <div class="lt-xbutton-status-busy-txt">
+            <span class="lt-xbutton-status-busy-txt-h1">Спасибо за обращение!</span>
+            <p class="lt-xbutton-status-busy-txt-p">Мы свяжемся с вами в рабочее время</p>
+         </div>
+      </div>
+   </div>
+</div>

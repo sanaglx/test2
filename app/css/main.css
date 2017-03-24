@@ -1,34 +1,40 @@
-h1 {
-  color: #ff0; }
-  h1 .bb {
-    color: #00F; }
-  h1 .cc {
-    padding: 10px;
-    margin: 25px; }
-
-.col {
-  width: 94%;
+.wraper {
+  max-width: 1280px;
+  padding: 0  15px;
   margin: 0 auto;
-  padding: 15px;
+  border: 1px solid #f00;
+}
+
+.wraper .col {
+  border: 1px solid #fff;
+  min-height: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
-  -webkit-box-shadow: 1px 1px 5px #F00;
-          box-shadow: 1px 1px 5px #F00;
-  -webkit-border-radius: 5px;
-          border-radius: 5px; }
-  .col .col-05 {
-    width: 45%;
-    margin: 20px 40px 20px 0;
-    display: inline-block;
-    vertical-align: top; }
-    .col .col-05 p {
-      text-align: left; }
+  background: #777;
+  width: -webkit-calc(8.33% - 30px);
+  width: calc(8.33% - 30px);
+  margin: 15px;
+}
 
-.p-p {
-  color: #F00;
-  font-size: 1em;
-  text-align: left; }
+.wraper .col div {
+  background: #777;
+  min-height: inherit;
+}
 
-.p-p1 {
-  color: #0F0;
-  font-size: 1em;
-  text-align: left; }
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

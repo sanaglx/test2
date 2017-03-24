@@ -1,3 +1,4 @@
+// установить  gulp, установить пакеты npm пример " npm install --save-dev gulp-sass"
 var gulp        = require('gulp'),
 	sass         = require('gulp-sass'), //Подключаем Sass пакет,
 	browserSync  = require('browser-sync'),// Подключаем Browser Sync
@@ -9,12 +10,14 @@ var gulp        = require('gulp'),
 //	imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
 //	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 //	cache        = require('gulp-cache'); // Подключаем библиотеку кеширования
+	gcmq		 = require('gulp-group-css-media-queries'), // обьеденяет несколько селекторов под одним именем в один
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 
 gulp.task('sass',function(){
 	return gulp.src('app/sass/*.+(scss|sass)')
 	.pipe(sass())
+	.pipe(gcmq())
 	.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}))

@@ -1,33 +1,40 @@
-@import "part";
+//@import "part";
 
-
-
-.col{
-	width: 94%;
+.wraper{
+	max-width: 1280px;
+	padding: 0  15px;
 	margin: 0 auto;
-	padding: 15px;
-	text-align:center;
-	box-shadow: 1px 1px 5px #F00;
-	border-radius: 5px;
-
-	.col-05{
-		width: 45%;
-		margin:  20px 40px 20px 0;
-		display: inline-block;
-		vertical-align: top;
-		p{
-			text-align: left;	
+	border: 1px solid #f00;
+	.col{
+		border: 1px solid #fff;
+		min-height: 400px;
+		box-sizing:border-box;
+		text-align: center;
+        background:#777; 
+		width: calc(8.33% - 30px);
+		margin:15px;
+		
+		div{
+			background: #777;
+			min-height: inherit;
 		}
+
+
 	}
-}	
-.p-p{
-	color:#F00;
-	font-size: 1em;
-	text-align: left;
 }
-.p-p1{
-	color:#0F0;
-	font-size: 1em;
-	text-align: left;
+.row{
+	display: flex;
+	flex-wrap:wrap;
+	margin: 0 -15px;
 }
+
+
+//для родителя в котором испльзуется потомки с флоатом
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+
 

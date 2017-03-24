@@ -1,63 +1,57 @@
 @charset "UTF-8";
+
 .s1 {
   padding: 30px;
-  text-align: center; }
-  .s1__img {
-    width: 40%;
-    float: left;
-    margin: 0 20px 0 0; }
-  .s1__blok2 {
-    color: #555;
-    width: 47%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 1% 40px 1%;
-    text-align: left; }
-  .s1__blok4 {
-    color: #555;
-    width: 22%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 1% 40px 1%;
-    text-align: left; }
-  .s1__blok6 {
-    color: #555;
-    width: 47%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 1% 40px 1%;
-    text-align: left; }
+  text-align: center;
+}
 
-@media screen and (max-width: 960px) {
-  .s1__blok4 {
-    width: 47%; } }
+.s1__img {
+  width: 40%;
+  float: left;
+  margin: 0 20px 0 0;
+}
 
-@media screen and (max-width: 648px) {
-  .s1__blok2 {
-    width: 98%; }
-  .s1__blok4 {
-    width: 98%; } }
+.s1__blok2 {
+  color: #555;
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1% 40px 1%;
+  text-align: left;
+}
 
-@media screen and (max-width: 420px) {
-  .s1__h4 {
-    text-align: center; }
-  .s1__blok2 {
-    width: 98%; }
-  .s1__img {
-    width: 100%;
-    float: none;
-    margin: 0 20px 0 0; } }
+.s1__blok4 {
+  color: #555;
+  width: 22%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1% 40px 1%;
+  text-align: left;
+}
+
+.s1__blok6 {
+  color: #555;
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1% 40px 1%;
+  text-align: left;
+}
 
 /* меню по центру */
+
 .nav.center ul {
-  text-align: center; }
+  text-align: center;
+}
 
 .nav {
-  margin: 20px 0; }
+  margin: 20px 0;
+}
 
 .nav ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .nav li {
   margin: 0 5px 10px 0;
@@ -65,74 +59,38 @@
   list-style: none;
   display: inline-block;
   *display: inline;
-  /* ie7 */ }
+  /* ie7 */
+}
 
 .nav a {
   padding: 3px 12px;
   text-decoration: none;
   color: #999;
-  line-height: 100%; }
+  line-height: 100%;
+}
 
 .nav a:hover {
-  color: #000; }
+  color: #000;
+}
 
 .nav .current a {
   background: #999;
   color: #fff;
   -webkit-border-radius: 3px;
-          border-radius: 3px; }
-
-@media screen and (max-width: 600px) {
-  .nav {
-    position: relative;
-    min-height: 40px;
-    margin: 0px;
-    top: 0;
-    left: 0; }
-  .nav ul {
-    width: 100%;
-    padding: 5px 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #FAFAFA url(images/icon-menu.png) no-repeat 10px 11px; }
-  .nav li {
-    display: none;
-    /* скрыть все <li> пункты */
-    margin: 0; }
-  .nav .current {
-    display: block;
-    /* показывать только текущие активные <li> пункты */ }
-  .nav a {
-    display: block;
-    padding: 5px 5px 5px 32px;
-    text-align: left; }
-  .nav .current a {
-    background: none;
-    color: #666; }
-  /* при наведении на пункты меню */
-  .nav ul:hover {
-    background-image: none; }
-  .nav ul:hover li {
-    display: block;
-    margin: 0 0 5px; }
-  .nav ul:hover .current {
-    background: url(images/icon-check.png) no-repeat 10px 7px; }
-  /* адаптивное меню справа */
-  .nav.right ul {
-    left: auto;
-    right: 0; }
-  /* адаптивное меню по центру */ }
+          border-radius: 3px;
+}
 
 body {
   font-family: Arial;
   line-height: 1.4;
   margin: 0;
   padding: 0;
-  background: #eee; }
+  background: #eee;
+}
 
 .col {
-  margin-top: 0px; }
+  margin-top: 0px;
+}
 
 .s2__blok1 {
   color: #555;
@@ -140,7 +98,8 @@ body {
   display: inline-block;
   vertical-align: top;
   margin: 0 5% 40px 5%;
-  text-align: left; }
+  text-align: left;
+}
 
 .s2__cir {
   width: 200px;
@@ -148,11 +107,111 @@ body {
   overflow: hidden;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .s2__cimg {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .s2__h4 {
-  text-align: center; }
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .s1__blok4 {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .s1__blok2 {
+    width: 98%;
+  }
+
+  .s1__blok4 {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    position: relative;
+    min-height: 40px;
+    margin: 0px;
+    top: 0;
+    left: 0;
+  }
+
+  .nav ul {
+    width: 100%;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FAFAFA url(images/icon-menu.png) no-repeat 10px 11px;
+  }
+
+  .nav li {
+    display: none;
+    /* скрыть все <li> пункты */
+    margin: 0;
+  }
+
+  .nav .current {
+    display: block;
+    /* показывать только текущие активные <li> пункты */
+  }
+
+  .nav a {
+    display: block;
+    padding: 5px 5px 5px 32px;
+    text-align: left;
+  }
+
+  .nav .current a {
+    background: none;
+    color: #666;
+  }
+
+  /* при наведении на пункты меню */
+
+  .nav ul:hover {
+    background-image: none;
+  }
+
+  .nav ul:hover li {
+    display: block;
+    margin: 0 0 5px;
+  }
+
+  .nav ul:hover .current {
+    background: url(images/icon-check.png) no-repeat 10px 7px;
+  }
+
+  /* адаптивное меню справа */
+
+  .nav.right ul {
+    left: auto;
+    right: 0;
+  }
+
+  /* адаптивное меню по центру */
+}
+
+@media screen and (max-width: 420px) {
+  .s1__h4 {
+    text-align: center;
+  }
+
+  .s1__blok2 {
+    width: 98%;
+  }
+
+  .s1__img {
+    width: 100%;
+    float: none;
+    margin: 0 20px 0 0;
+  }
+}
